@@ -45,3 +45,8 @@ merge/rebase a branch into current branch by doing the following
 ## Forking
 
 Fork is where you get your own remote copy of the repository. There is a fork button in github, which will make a copy of the repo. After you make your changes in that repo, you can submit a pull request which will ask them to pull in the changes in your fork.
+
+## Rewind commits
+To move back to a previous commit, but keep the changes as unstaged do `git reset HEAD~1`
+
+To move back to the previous commit and throw away the changes do `git reset HEAD~1 --hard`
