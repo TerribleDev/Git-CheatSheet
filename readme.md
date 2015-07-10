@@ -32,7 +32,7 @@ merge/rebase a branch into current branch by doing the following
 
 
 `git fetch --all` (fetch all changes from remote server)
-`git merge/rebase origin/BranchNameToMergeFrom` (merge in the changes from the remote branch)
+`git merge origin/BranchNameToMergeFrom` OR `git rebase origin/BranchNameToMergeFrom` (merge in the changes from the remote branch)
 
 ### Rebase or merge
 
