@@ -12,7 +12,7 @@
 
 List branches: `git branch`
 
-Create branch with the current branch `git checkout -b BranchName`
+Create branch with the current branch `git checkout -b NewBranchName`
 
 
 delete local branch `git branch -D BranchName`
