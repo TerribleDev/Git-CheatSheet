@@ -1,6 +1,6 @@
 ## Committing:
 
-`git add .`` OR `git add path/to/file` OR `git add *.png`
+`git add .` OR `git add path/to/file` OR `git add *.png`
 
 `git commit -m "Your Message"`
 
@@ -28,9 +28,18 @@ To put cloning in lamens term you download the remote repository locally
 
 ## Merging
 
-merge a branch into current branch
+merge/rebase a branch into current branch by doing the following
 
-`git merge BranchNameToMergeFrom`
+
+`git fetch --all` (fetch all changes from remote server)
+`git merge/rebase origin/BranchNameToMergeFrom` (merge in the changes from the remote branch)
+
+### Rebase or merge
+
+***Rebase*** rewinds your commits back until you are at the same commit as the other branch. Then applies their changes, and then your changes. this is good if you want all of your commits at the tip of the branch, but may cause excessive merge conflicts.
+
+***Merge*** simply merges the target branch into your branch.
+
 
 
 ## Forking
