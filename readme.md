@@ -50,3 +50,12 @@ Fork is where you get your own remote copy of the repository. There is a fork bu
 To move back to a previous commit, but keep the changes as unstaged do `git reset HEAD~1`
 
 To move back to the previous commit and throw away the changes do `git reset HEAD~1 --hard`
+
+
+## Squishing commits
+
+If you have multiple commits and someone asks you to "squish them" they are asking you to convert your 5+ commits to be a single commit
+
+The easiest way to do that is to count how many commits you have from master. Then just do `git reset HEAD~<YourCommitCountHere>` ex. `git reset HEAD~3` then afterwards make a new commit. You will then need to force push to your branch `git push origin YourBranchName --force`
+
+![](rollbackexample.png)
