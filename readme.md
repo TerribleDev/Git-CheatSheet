@@ -4,7 +4,7 @@
 
 `git commit -m "Your Message"`
 
-`git push origin YourBranchName` (gh-pages)
+`git push origin YourBranchName` (master could go here..)
 
 
 
