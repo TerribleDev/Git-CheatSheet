@@ -3,7 +3,9 @@
 Making a commit in git involves 3 steps:
 
 Step 1. Stage the files to be committed
+
 Step 2. make a commit and leave a Message
+
 Step 3. Push the commit to the remove server
 
 Step 1:
