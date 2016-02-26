@@ -12,7 +12,7 @@ Step 1:
 
 `git add .` OR `git add path/to/file` OR `git add *.png`
 
-***doing git add . will stage all files in the current directory down that are not gitignored (and is often the easiest way)***
+*doing git add . will stage all files in the current directory down that are not gitignored (and is often the easiest way)*
 
 Step 2:
 
