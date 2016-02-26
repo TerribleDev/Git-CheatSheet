@@ -51,6 +51,14 @@ To move back to a previous commit, but keep the changes as unstaged do `git rese
 
 To move back to the previous commit and throw away the changes do `git reset HEAD~1 --hard`
 
+## Revert commits
+
+Reverting commits is not simple in git, but not really hard. If the commits are at the tip of the branch it may be easier to Rewind commits and force push. Otherwise you can use the git revert command
+
+Revert a specific commit: `git revert <shaOfCommit>` ex. `git revert 08df7a`
+
+Revert a merge commit `git revert -m 1 <shaOfMergeCommit>` ex. `git revert -m 1 08df7a`
+
 ## Submodules
 
 Submodules are basically nested git repos...
