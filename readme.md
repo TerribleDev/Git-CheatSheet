@@ -1,9 +1,22 @@
 ## Committing:
 
+Making a commit in git involves 3 steps:
+
+Step 1. Stage the files to be committed
+Step 2. make a commit and leave a Message
+Step 3. Push the commit to the remove server
+
+Step 1:
+
 `git add .` OR `git add path/to/file` OR `git add *.png`
+
+***doing git add . will stage all files in the current directory down that are not gitignored (and is often the easiest way)***
+
+Step 2:
 
 `git commit -m "Your Message"`
 
+Step 3:
 `git push origin YourBranchName` (master could go here..)
 
 
