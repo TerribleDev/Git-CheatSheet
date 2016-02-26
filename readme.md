@@ -70,6 +70,11 @@ Remove submodule files: `git submodule deinit .`
 
 Clone Submodule Files: `git submodule update --init --recursive`
 
+Change clone url of submodule:
+* Fix the url in the `.gitmodules` file
+* Commit the changes of the `.gitmodules` file
+* Run `git submodule sync --recursive`
+
 
 ## Squishing commits
 
