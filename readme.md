@@ -51,6 +51,17 @@ To move back to a previous commit, but keep the changes as unstaged do `git rese
 
 To move back to the previous commit and throw away the changes do `git reset HEAD~1 --hard`
 
+## Submodules
+
+Submodules are basically nested git repos...
+
+
+Add a new submodule: `git submodule add https://RepoOfSubmodule`
+
+Remove submodule files: `git submodule deinit .`
+
+Clone Submodule Files: `git submodule update --init --recursive`
+
 
 ## Squishing commits
 
