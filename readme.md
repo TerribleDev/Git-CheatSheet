@@ -96,6 +96,11 @@ Change clone url of submodule:
 
 If you have multiple commits and someone asks you to "squish them" they are asking you to convert your 5+ commits to be a single commit
 
-The easiest way to do that is to count how many commits you have from master. Then just do `git reset HEAD~<YourCommitCountHere>` ex. `git reset HEAD~3` then afterwards make a new commit. You will then need to force push to your branch `git push origin YourBranchName --force`
+There are 2 ways to do it.
+
+One way is to count how many commits you have from master. Then just do `git reset HEAD~<YourCommitCountHere>` ex. `git reset HEAD~3` then afterwards make a new commit. You will then need to force push to your branch `git push origin YourBranchName --force`
 
 ![](rollbackexample.png)
+
+
+The other way is to do an interactive rebase. The first thing you need to do is a fetch `git fetch --all ` then start an interactive rebase from master `git rebase -i origin/master` (note the -i). You will then see a log of your commits with the word `pick` before each one. This prompt will be in `vi`. You can hit the `i` key to turn into an editing mode, leave the first line as `pick` and change of the rest of of the lines from the `pick` prefix to `s` also known as squash. Then hit the `esc` key and type `:wq` (colon w, q) aka write quit. The rebase should occur except your `x` number of commits will now be a single commit.
